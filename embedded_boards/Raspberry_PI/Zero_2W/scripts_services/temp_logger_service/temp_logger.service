@@ -1,0 +1,11 @@
+[Unit]
+Description=CPU Temperature Logger
+
+[Service]
+ExecStart=/home/admin/temp_logger.sh
+Restart=always
+User=admin
+WorkingDirectory=/home/admin
+
+[Install]
+WantedBy=multi-user.target
